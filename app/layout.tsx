@@ -36,10 +36,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <SidebarProvider>
-            <AppNavbar />
-            <div className="pt-14 container mx-auto">{children}</div>
-          </SidebarProvider>
+          <AppNavbar />
+          <div className="pt-14">
+            <SidebarProvider>{children}</SidebarProvider>
+          </div>
         </ThemeProvider>
       </body>
     </html>
