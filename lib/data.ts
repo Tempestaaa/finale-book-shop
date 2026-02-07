@@ -1,4 +1,12 @@
 import { iShoppingCart } from "@/types/data";
+import {
+  ArrowDownNarrowWide,
+  ArrowUpWideNarrow,
+  Flame,
+  SortAsc,
+  Sparkles,
+  Star,
+} from "lucide-react";
 
 export const shoppingCartData: iShoppingCart[] = [
   {
@@ -80,6 +88,25 @@ export const bookData = {
     { id: "GEN-18", name: "Suspense" },
     { id: "GEN-19", name: "Young Adult" },
   ],
+  language: [
+    { id: "LANG-1", name: "English" },
+    { id: "LANG-2", name: "Vietnamese" },
+    { id: "LANG-3", name: "Japanese" },
+  ],
+  format: [
+    { id: "FORM-1", name: "Hardcover" },
+    { id: "FORM-2", name: "Paperback" },
+    { id: "FORM-3", name: "Audiobook" },
+    { id: "FORM-4", name: "E-book" },
+  ],
+  status: [
+    { id: "STAT-1", name: "In stock" },
+    { id: "STAT-2", name: "Out of stock" },
+    { id: "STAT-3", name: "Pre-order" },
+    { id: "STAT-4", name: "Coming soon" },
+    { id: "STAT-5", name: "Ongoing" },
+    { id: "STAT-6", name: "Completed" },
+  ],
 };
 
 export const staticData = {
@@ -140,6 +167,45 @@ export const staticData = {
         "A new login was detected from a Chrome browser on Windows. If this wasn't you, please reset your password immediately.",
       timestamp: "2026-02-02T13:45:00Z",
       isRead: false,
+    },
+  ],
+  sortOptions: [
+    {
+      id: "SORT-1",
+      name: "Newest Arrivals",
+      value: "new",
+      shoppingCartData,
+      icon: Sparkles,
+    },
+    {
+      id: "SORT-2",
+      name: "Best Sellers",
+      value: "hot",
+      icon: Flame,
+    },
+    {
+      id: "SORT-3",
+      name: "Price: Low to High",
+      value: "price-ascended",
+      icon: ArrowDownNarrowWide,
+    },
+    {
+      id: "SORT-4",
+      name: "Price: High to Low",
+      value: "price-descended",
+      icon: ArrowUpWideNarrow,
+    },
+    {
+      id: "SORT-5",
+      name: "Top Rated",
+      value: "top-rated",
+      icon: Star,
+    },
+    {
+      id: "SORT-6",
+      name: "Alphabetical (A-Z)",
+      value: "alphabetical",
+      icon: SortAsc,
     },
   ],
 };

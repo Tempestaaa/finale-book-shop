@@ -21,7 +21,7 @@ import Link from "next/link";
 
 export default function AppNavbar() {
   return (
-    <nav className="fixed top-0 w-full h-14 flex items-center bg-background z-50 border-b">
+    <nav className="fixed top-0 w-full h-14 flex items-center bg-background z-50">
       <article className="grid grid-cols-2 w-full px-4">
         <section className="flex items-center gap-2">
           <Button variant="ghost" className="p-1.5" asChild>
